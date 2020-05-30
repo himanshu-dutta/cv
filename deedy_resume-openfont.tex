@@ -1,0 +1,230 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Himanshu}{Dutta}{ \urlstyle{same}\href{https://www.linkedin.com/in/himanshu-dutta-257875179}{Linkedin} | \href{http://github.com/himanshu-dutta/}{GitHub}\\
+\href{mailto:meet.himanshu.dutta@gmail.com}{meet.himanshu.dutta@gmail.com} | +91 9828647472 | +91 9407974080
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.40\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{KIIT University}
+\descript{BTech in Computer Science \& System}
+\location{Jun 2018 - Present(Expected 2022) | Bhubaneshwar, India}
+\location{ Cum. GPA(3rd Semester): 9.67 / 10.0}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Technical}
+\location{Proficient with:}
+Python  \textbullet{} Tensorflow  \textbullet{} C/C++  \textbullet{} Machine Learning  \\
+Javascript  \textbullet{} HTML  \textbullet{} CSS \\
+Neural Networks  \textbullet{} Data Science  \textbullet{} NLP\\ 
+\location{Familiar:}
+Django  \textbullet{} MySQL \\
+Java  \textbullet{} Reinforcement Learning\\
+\sectionsep
+\subsection{Soft Skills}
+Leadership \textbullet{} Teamwork\\ 
+Bilingual(English, Hindi)\\
+Problem-Solving \textbullet{} Communication
+\sectionsep
+\sectionsep
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     Experience
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{IIT Kanpur}
+\descript{| Machine Learning and IoT Internship }
+\location{May - July 2019 | Bhubaneshwar, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Underwent 30 days training on Machine Learning and IoT.
+\item Learned to integrate different ML models with various IoT devices.
+\item Worked on a capstone project based on Natural Language Processing and Timeseries forecasting.
+\end{tightemize}
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     Certifications
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Certification} 
+
+\textbullet{}  \href{https://www.coursera.org/verify/E97BDRL3T2L8}{Neural Networks and Deep Learning}\\
+\sectionsep
+\textbullet{}  \href{https://www.coursera.org/verify/DZ632TAD79WH}{Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning}\\
+\sectionsep
+\textbullet{}  \href{https://www.coursera.org/verify/TJE3ZUZPNU4K}{Java Programming}\\
+\sectionsep
+\textbullet{}  \href{https://www.coursera.org/verify/4BECE8N7EVTT}{Programming Foundation with JavaScript, HTML and CSS}\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.55\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Technical Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Projects}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\runsubsection{Stock Based Scripts}
+\descript{| \href{https://github.com/himanshu-dutta/stock-based-scripts}{GitHub}}
+\location{May 2020}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Wrote various scripts in Python to analyze stock data to base investment decisions on.
+\item Created methods to scrap and collect stock data for most of the available stock symbols.
+\item Made filters and ranker to assess the quality of stock.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\runsubsection{COVID-19 EDA}
+\descript{| \href{https://github.com/himanshu-dutta/covid-19}{GitHub}}
+\location{April 2020}
+\begin{tightemize}
+\item Performed exploratory analysis on COVID-19 data made available by Jon Hopkins University.
+\item Wrote a notebook to explain SARS model and modelled the pandemic on the same.
+\item Employed mathematical models to compare situation in China and India as per their data.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\runsubsection{AI Deabte Master}
+\descript{| \href{https://github.com/himanshu-dutta/ai-debate-master}{GitHub}}
+\location{April 2020}
+\begin{tightemize}
+\item Created and deployed a bot made to debate with a human on any given topic.
+\item Employed a Doc2Vec model using Gensim library in Python.
+\item Used Google CSE and wrote various web-scrapping methods for collection of data.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\runsubsection{Q Learning on custom Chrome T-Rex Environment}
+\descript{| \href{https://github.com/himanshu-dutta/chrome_t-rex_environment}{GitHub} }
+\location{Oct 2019}
+\begin{tightemize}
+\item Created a replica of Google Chrome's T-Rex game, ready to be trained using OpenAI's Gym library.
+\item Wrote a Q-Learning based script, to train the agent to achieve set goal.
+\item For extensive use and learning purpose, the environment is put in an open repository, so as to be used by others to train their agents on it.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\runsubsection{Effect of News Sentiments on Stock Prediction}
+\descript{| \href{https://github.com/himanshu-dutta/sentiment_analysis_on_stock_news}{GitHub} }
+\location{June 2019}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item NLP and Time-series forecasting based project.
+\item Performed Sentiment Analysis on News related to Stock Market.
+\item Compared the forecasting made using LSTM model with and without result of the analysis.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research}
+\runsubsection{Genetic Algorithm Based Cloud Scheduling}
+\descript{| \href{https://github.com/himanshu-dutta/genetic-cloud-task-scheduling}{GitHub}}
+\location{Dec 2019}
+\begin{tightemize}
+\item Employed Genetic Algorithm to schedule tasks on cloud and benchmarked results on \href{https://www.fing.edu.uy/inco/grupos/cecal/hpc/HCSP/index.htm}{HCSP Data} .
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
