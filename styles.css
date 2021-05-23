@@ -1,0 +1,268 @@
+body {
+    background: rgb(204, 204, 204);
+    font-family: Arial, sans-serif;
+}
+
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+    min-height: 29.7cm;
+
+    /* padding: 0.8cm 1.31cm 0.8cm 1.31cm; */
+    /* padding: 1.9cm 1.32cm 0.8cm 1.31cm; */
+    padding: 1.5cm 1.32cm 4.67cm 1.5cm;
+}
+
+page[size="A4"][layout="landscape"] {
+    width: 29.7cm;
+    height: 21cm;
+}
+
+@media print {
+    body,
+    page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+
+a {
+    border: 1.5px solid aqua;
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+#name {
+    font-weight: 800;
+    font-size: 20pt;
+}
+
+#last-updated {
+    display: flex;
+    font-size: 5.5pt;
+}
+
+#last-updated-span {
+    align-self: flex-end;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    align-content: flex-end;
+}
+
+.subtitle-content {
+    display: flex;
+    align-content: flex-end;
+}
+.subtitle-img {
+    align-self: flex-end;
+    height: 10pt;
+    width: 10pt;
+    margin-right: 2px;
+}
+
+.subtitle-link {
+    align-self: flex-end;
+    margin-left: 2px;
+}
+
+/* main content */
+
+.main-content {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    column-gap: 5%;
+}
+
+/* .content-col{
+    background: rgb(233, 233, 233);
+} */
+
+.content-section {
+    margin-top: 20px;
+}
+
+.content-title {
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.content-subtitle {
+    font-size: 10pt;
+    margin-top: 3px;
+    /* margin-bottom: 3px; */
+}
+
+.title-hr {
+    border-top: 1.5px dashed black;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+.subtitle-hr {
+    border-top: 1.5px dashed #a6a6a6;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    width: 85%;
+    height: 0px;
+    margin-left: 0px;
+}
+
+.work-position {
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+.work-company {
+    font-size: 9pt;
+}
+
+.company-link {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.date-loc {
+    font-size: 8pt;
+    margin-top: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-loc-content {
+    display: flex;
+}
+
+.date-loc-img {
+    height: 15px;
+    width: 15px;
+    margin-right: 1.5px;
+
+    align-self: center;
+}
+
+.date-loc-content {
+    margin-left: 1.5px;
+    align-self: center;
+}
+
+.details {
+    margin-top: 10px;
+}
+
+.detail-para {
+    display: flex;
+    font-size: 10pt;
+    align-content: center;
+
+    margin-bottom: 6px;
+}
+
+.para-dot {
+    align-self: center;
+    margin-right: 2px;
+}
+
+.detail-content {
+    text-align: justify;
+}
+
+/* education */
+.content-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.education {
+    font-size: 10.5pt;
+}
+.institute {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+.institute-name {
+    font-size: 9pt;
+    font-weight: 550;
+}
+
+.institute-location {
+    display: flex;
+    margin-top: 6px;
+    font-size: 9pt;
+}
+
+.education-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+
+    font-size: 8pt;
+}
+
+/* Projects */
+.project-title-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+.project-links {
+    display: flex;
+    font-size: 8pt;
+}
+
+.project-link {
+    align-self: flex-end;
+}
+
+.vl {
+    border-left: 1.5px solid black;
+    height: 11pt;
+    align-self: flex-end;
+    margin: 0 4px 0 4px;
+}
+
+.tech-stack {
+    color: #707070;
+    font-size: 9pt;
+
+    display: flex;
+}
+
+.tech {
+    border: 1px solid #a6a6a6;
+    border-radius: 2px;
+    padding: 2px;
+    margin-right: 4px;
+    box-shadow: 0.5px 0.5px 0px 0px;
+}
